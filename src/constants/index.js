@@ -80,39 +80,39 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Koncepthive Gym Homepage",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A modern and responsive homepage for Koncepthive Gym, showcasing their services, facilities, and membership options.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Designed and developed a responsive homepage for Koncepthive Gym using React and Tailwind CSS.",
+      "Implemented smooth scrolling, interactive elements, and optimized performance for an engaging user experience.",
+      "Showcased gym services, facilities, and membership options with visually appealing layouts and animations.",
+
     ],
-    href: "",
+    href: "https://koncepthive.netlify.app/",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/koncepthive-gym.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "TypeScript",
+        path: "/assets/logos/typescript.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
+      {
+        id: 4,
+        name: "Netlify",
+        path: "/assets/logos/netlify.svg",
+      }
     ],
   },
   {
