@@ -38,38 +38,43 @@ export const myProjects = [
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
+    title: "AI Resume Analyzer",
     description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+      "An AI-powered resume analysis tool that provides insights and recommendations for job seekers.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Built a full-stack resume analysis application using React for the frontend and Puter for the backend.",
+      "Implemented a Puter backend to handle resume parsing, analysis, and recommendation generation.",
+      "used Zustand hook-based state management library for React."
     ],
-    href: "",
+    href: "https://github.com/Dilukshan16/ai-resume-analyzer",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/ai-resume.png",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 2,
+        name: "Puter",
+        path: "/assets/logos/puter.svg",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Vite",
+        path: "/assets/logos/vitejs.svg",
+      },
+      {
+        id: 5,
+        name: "Zustand",
+        path: "/assets/logos/zustand.svg",
       },
     ],
   },
