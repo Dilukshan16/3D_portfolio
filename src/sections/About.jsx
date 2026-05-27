@@ -30,7 +30,7 @@ const About = () => {
             <p className="headtext">Hi, I'm Pushparajah Dilukshan</p>
             <p className="subtext">
               Over the last 2 years, I developed my frontend and backend
-              devskills to deliver dynamic and responsive software and web
+              dev skills to deliver dynamic and responsive software and web
               applications.
             </p>
           </div>
@@ -115,8 +115,8 @@ const About = () => {
             <p className="headtext">Tech Stack</p>
             <p className="subtext">
               I have experience working with a wide range of
-              languages,frameworks, and tools that allow me to create robust and
-              scalable aplications. 
+              languages, frameworks, and tools that allow me to create robust and
+              scalable applications. 
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
