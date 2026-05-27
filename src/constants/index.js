@@ -1,39 +1,39 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Raindrops Villa",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Developed a mindfulness and eco-tourism web platform inspired by the Sinharaja Rainforest, promoting nature-based wellness experiences and sustainable travel.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Developed and deployed a scalable full-stack web application using Next.js on an AWS Linux server.",
+      "Configured Nginx, PM2, and HTTPS to ensure secure, reliable, and high-availability production deployment.",
+      "Integrated SEO optimization, dynamic content structuring, and image galleries to improve discoverability and storytelling of the Rain Drops experience.",
+      "Managed Linux server administration, automatic application restarts, and deployment workflows for stable production performance.",
     ],
-    href: "",
+    href: "https://raindrops.lk/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/raindrops.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Next.js",
+        path: "/assets/logos/Next.js.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
+      {
+        id: 3,
+        name: "Nginx",
+        path: "/assets/logos/nginx.svg",
+      },
+      {
+        id: 4,
+        name: "AWS",
+        path: "/assets/logos/aws.svg",
+      }
     ],
   },
   {
@@ -325,4 +325,4 @@ export const reviews = [
     body: "So glad I found this. It has changed the game for me.",
     img: "https://robohash.org/eve",
   },
-]; 
+];
