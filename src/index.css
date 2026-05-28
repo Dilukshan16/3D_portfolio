@@ -47,6 +47,12 @@
     }
   }
 }
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
 body {
   background: #030412;
   font-family: "Funnel Display", sans-serif;

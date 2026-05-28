@@ -4,21 +4,32 @@ import { useRef } from "react";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { lazy, Suspense } from "react";
+import { motion } from "motion/react";
 
 const About = () => {
   const grid2Container = useRef();
 
   return (
-    <section className="c-space section-spacing">
+    <motion.section
+      id="about"
+      className="c-space section-spacing"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-heading">About Me</h2>
       <div
         className="grid grid-cols-1 gap-4 md:grid-cols-6 
-    md:auto-rows-[18rem] mt-12"
+        md:auto-rows-[18rem] mt-12"
       >
         {/* grid 1 */}
-        <div
-          className="flex items-end grid-default-color
-       grid-1"
+        <motion.div
+          className="flex items-end grid-default-color grid-1"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           <img
             src="assets/coding-pov.png"
@@ -29,15 +40,20 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Pushparajah Dilukshan</p>
             <p className="subtext">
-              Over the last 2 years, I developed my frontend and backend
-              dev skills to deliver dynamic and responsive software and web
+              Over the last 2 years, I developed my frontend and backend dev
+              skills to deliver dynamic and responsive software and web
               applications.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-        </div>
+        </motion.div>
         {/* grid 2 */}
-        <div className="grid-default-color grid-2">
+        <motion.div
+          className="grid-default-color grid-2"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
           <div
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
@@ -57,7 +73,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Priciples"
+              text="Design Principles"
               containerRef={grid2Container}
             />
             <Card
@@ -86,45 +102,59 @@ const About = () => {
               containerRef={grid2Container}
             />
           </div>
-        </div>
+        </motion.div>
         {/* grid 3 */}
-        <div className="grid-black-color grid-3">
+        <motion.div
+          className="grid-black-color grid-3"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
           <div className="z-10 w-[50%] ">
             <p className="headtext"> Time Zone</p>
             <p className="subtext">
               I'm Based in Colombo, and open to remote opportunities worldwide.
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
-            <Globe />
+          <figure className="absolute left-[35%] top-[0%]">
+            {/* <Globe /> */}
           </figure>
-        </div>
+        </motion.div>
         {/* grid 4 */}
-        <div className="grid-special-color grid-4">
+        <motion.div
+          className="grid-special-color grid-4"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+        >
           <div className="flex flex-col items-center justify-center gap-4 size-full">
             <p className="text-center headtext">
-              {" "}
               Do you want to start a project together?
             </p>
             <CopyEmailButton />
           </div>
-        </div>
+        </motion.div>
         {/* grid 5 */}
-        <div className="grid-default-color grid-5">
+        <motion.div
+          className="grid-default-color grid-5"
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+        >
           <div className="z-10 w-[50%]">
             <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I have experience working with a wide range of
-              languages, frameworks, and tools that allow me to create robust and
-              scalable applications. 
+              I have experience working with a wide range of languages,
+              frameworks, and tools that allow me to create robust and scalable
+              applications.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
             <Frameworks />
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
