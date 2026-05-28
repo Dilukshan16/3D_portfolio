@@ -4,10 +4,12 @@ import { useRef } from "react";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { lazy, Suspense } from "react";
+
 
 const About = () => {
   const grid2Container = useRef();
-
+  
   return (
     <section id="about" className="c-space section-spacing">
       <h2 className="text-heading">About Me</h2>
@@ -29,8 +31,8 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Pushparajah Dilukshan</p>
             <p className="subtext">
-              Over the last 2 years, I developed my frontend and backend
-              dev skills to deliver dynamic and responsive software and web
+              Over the last 2 years, I developed my frontend and backend dev
+              skills to deliver dynamic and responsive software and web
               applications.
             </p>
           </div>
@@ -57,7 +59,7 @@ const About = () => {
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
-              text="Design Priciples"
+              text="Design Principles"
               containerRef={grid2Container}
             />
             <Card
@@ -95,8 +97,8 @@ const About = () => {
               I'm Based in Colombo, and open to remote opportunities worldwide.
             </p>
           </div>
-          <figure className="absolute left-[30%] top-[10%]">
-            <Globe />
+          <figure className="absolute left-[35%] top-[0%]">
+              <Globe />
           </figure>
         </div>
         {/* grid 4 */}
@@ -114,9 +116,9 @@ const About = () => {
           <div className="z-10 w-[50%]">
             <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I have experience working with a wide range of
-              languages, frameworks, and tools that allow me to create robust and
-              scalable applications. 
+              I have experience working with a wide range of languages,
+              frameworks, and tools that allow me to create robust and scalable
+              applications.
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
