@@ -33,7 +33,7 @@ export const myProjects = [
         id: 4,
         name: "AWS",
         path: "/assets/logos/aws.svg",
-      }
+      },
     ],
   },
   {
@@ -45,7 +45,7 @@ export const myProjects = [
       "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
       "Built a full-stack resume analysis application using React for the frontend and Puter for the backend.",
       "Implemented a Puter backend to handle resume parsing, analysis, and recommendation generation.",
-      "used Zustand hook-based state management library for React."
+      "used Zustand hook-based state management library for React.",
     ],
     href: "https://github.com/Dilukshan16/ai-resume-analyzer",
     logo: "",
@@ -87,7 +87,6 @@ export const myProjects = [
       "Designed and developed a responsive homepage for Koncepthive Gym using React and Tailwind CSS.",
       "Implemented smooth scrolling, interactive elements, and optimized performance for an engaging user experience.",
       "Showcased gym services, facilities, and membership options with visually appealing layouts and animations.",
-
     ],
     href: "https://koncepthive.netlify.app/",
     logo: "",
@@ -112,7 +111,7 @@ export const myProjects = [
         id: 4,
         name: "Netlify",
         path: "/assets/logos/netlify.svg",
-      }
+      },
     ],
   },
   {
@@ -225,48 +224,74 @@ export const mySocials = [
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/dilukshan-pushparajah-772a07231/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/dilukshan_pushparajah/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
-    contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
-    ],
-  },
-  {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
+    title: "Diploma in Software Engineering",
+    job: "Academic Foundation",
     date: "2023-2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Built a strong foundation in programming, databases, object-oriented concepts, and software development principles.",
+      "Developed academic projects using Java, C#, HTML, CSS, JavaScript, and SQL.",
+      "Learned problem-solving techniques, algorithms, and software design methodologies.",
+      "Gained hands-on experience with version control systems and collaborative development workflows.",
+    ],
+  },
+  // ✅
+  {
+    title: "HND in Software Engineering",
+    job: "Advanced Computing Studies",
+    date: "2024-2025",
+    contents: [
+      "Expanded knowledge in full-stack development, API integration, and modern web technologies.",
+      "Worked on practical software engineering projects using",
+      "✅ React",
+      "✅ Node.js",
+      "✅ ASP.NET Core",
+      "✅ MongoDB",
+      "Improved understanding of system analysis, software architecture, and agile development practices.",
+      "Developed responsive and scalable applications with focus on user experience and performance optimization.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
+    title: "Intern Web Developer",
+    job: "Industry Experience",
+    date: "2025-2026",
+    contents: [
+      "Contributed to real-world web development projects using modern frontend and backend technologies.",
+      "Collaborated with development teams to build responsive interfaces and maintain scalable applications.",
+      "Worked with REST APIs, debugging, deployment workflows, and database integration.",
+      "Enhanced practical knowledge of software development lifecycle, teamwork, and professional coding standards.",
+    ],
+  },
+  {
+    title: "Undergraduate in Software Engineering",
+    job: "Higher Education",
     date: "2025-Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Pursuing advanced studies in software engineering, system design, and emerging technologies.",
+      "Continuously improving skills in full-stack development, cloud technologies, and cybersecurity concepts.",
+      "Building personal and academic projects focused on scalable applications and modern user experiences.",
+      "Actively exploring new technologies and industry practices to strengthen technical expertise.",
+    ],
+  },
+  {
+    title: "Career Development",
+    job: "Open to Opportunities",
+    date: "Present",
+    contents: [
+      "Actively seeking internship and entry-level software engineering opportunities to apply and expand technical skills.",
+      "Interested in full-stack web development, frontend engineering, and modern software development practices.",
+      "Passionate about continuous learning, teamwork, and building impactful digital solutions.",
     ],
   },
 ];
