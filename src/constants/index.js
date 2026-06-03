@@ -140,43 +140,43 @@ export const myProjects = [
       },
     ],
   },
-  // {
-  //   id: 5,
-  //   title: "WordPress Custom Theme",
-  //   description:
-  //     "A fully customizable WordPress theme optimized for performance and SEO.",
-  //   subDescription: [
-  //     "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-  //     "Integrated Tailwind CSS for modern styling and UI enhancements.",
-  //     "Optimized SEO and page speed using Vite.js for fast builds.",
-  //     "Implemented custom widgets and plugin compatibility for extended functionality.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "/assets/projects/wordpress-theme.jpg",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "WordPress",
-  //       path: "/assets/logos/wordpress.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "HTML5",
-  //       path: "/assets/logos/html5.svg",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "CSS3",
-  //       path: "/assets/logos/css3.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "Vite.js",
-  //       path: "/assets/logos/vitejs.svg",
-  //     },
-  //   ],
-  // },
+  {
+    id: 5,
+    title: "CI/CD Pipeline with Docker and Jenkins",
+    description:
+      "A complete Continuous Integration and Continuous Deployment (CI/CD) workflow for a Node.js application using Jenkins and Docker.",
+    subDescription: [
+      "GitHub Push: The process begins when code changes are pushed to the GitHub repository.",
+      "Jenkins Build Trigger: Jenkins, our automation server, is configured to monitor the GitHub repository for changes.",
+      "Docker Image Creation: Jenkins pulls the base Docker image from DockerHub",
+      "Update Status: Jenkins updates the build status on GitHub,",
+    ],
+    href: "https://github.com/Dilukshan16/Docker-and-Jenkins-CI-CD-Pipeline",
+    logo: "",
+    image: "/assets/projects/CICD Pipeline.png",
+    tags: [
+      {
+        id: 1,
+        name: "GitHub",
+        path: "/assets/logos/github.svg",
+      },
+      {
+        id: 2,
+        name: "Docker",
+        path: "/assets/logos/docker.svg",
+      },
+      {
+        id: 3,
+        name: "Jenkins",
+        path: "/assets/logos/jenkins.svg",
+      },
+      {
+        id: 4,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.svg",
+      },
+    ],
+  },
   // {
   //   id: 6,
   //   title: "Online Learning Platform",
