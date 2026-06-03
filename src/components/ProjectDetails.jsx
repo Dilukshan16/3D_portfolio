@@ -1,4 +1,5 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import { useEffect } from "react";
 const ProjectDetails = ({
   title,
   description,
@@ -8,6 +9,18 @@ const ProjectDetails = ({
   href,
   closeModal,
 }) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    if (window.lenis) {
+      window.lenis.stop();
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+      if (window.lenis) {
+        window.lenis.start();
+      }
+    };
+  }, []);
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center
@@ -15,9 +28,9 @@ const ProjectDetails = ({
       // onClick={closeModal}
     >
       <motion.div
-        className="relative max-w-2xl border shadow-sm rounded-2xl 
+        className="relative w-full max-w-2xl border shadow-sm rounded-2xl 
         bg-linear-to-l from-midnight to-navy border-white/10
-        flex flex-col max-h-[95vh]"
+        flex flex-col max-h-[95vh] overflow-hidden"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
       >
@@ -29,9 +42,13 @@ const ProjectDetails = ({
           <img src="assets/close.svg" alt="Close" className="w-6 h-6" />
         </button>
         <div className="w-full h-68 flex-shrink-0">
-          <img src={image} alt={title} className="w-full h-full rounded-t-2xl object-cover-" />
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full rounded-t-2xl object-cover-"
+          />
         </div>
-        <div className="p-6 overflow-y-auto ">
+        <div className="p-6 overflow-y-auto min-h-0 flex-1">
           <h5 className="mb-2 text-2xl font-bold text-white"> {title} </h5>
           <p className="mb-3 font-normal text-neutral-400"> {description} </p>
           {subDescription.map((subDesc, index) => (
